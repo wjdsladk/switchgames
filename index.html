@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+      <section class="login-form">
+          <h1>---------</h1>
+          <form action="">
+              <div class="int-area">
+                  <input type="text" name="id" id="id" autocomplete="off" required>
+                  <label for="id">USER NAME</lable>
+              </div>
+
+              <div class="int-area">
+                <input type="password" name="pw" id="pw" autocomplete="off" required>
+                <label for="pw">PASSWORD</lable>
+            </div>
+            <div class="btn-area">
+                <button type="submit">LOGIN</button>
+            </div>
+          </form>
+
+            <div class="btn-area">
+                <button type="button" onclick="window.location.href='games.html'">WITHOUT LOGIN</button>
+            </div>
+
+            <div class="caption">
+                <a href="signin.html">SIGN IN</a>
+            </div>
+
+            <div class="caption">
+                <a href="forgotpw.html">FORGOT PASSWORD</a>
+            </div>
+
+      </section>
+
+      <script>
+          let id =$('#id');
+          let pw =$('#pw');
+          let btn =$('#btn');
+
+          $(btn).on('click', function() {
+              if($(id).val() == "") {
+                  $(id).next('label').addClass('warning');
+                  setTimeout(function() {
+                      $('label').removerClass('warning')
+                  },1500);
+              }
+              else if($(pw).val() == "") {
+                  $(pw).next('label').addClass('warning');
+              }
+          });
+      </script>
+
+  </body>
+</html>
