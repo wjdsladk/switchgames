@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>sign in</title>
+  </head>
+  <body>
+
+  <form action="#" method="post">  <!-- method post=encrypt get=x -->
+    <fieldset>
+      <legend>Required</legend>
+      <p>
+        <label for="name">NAME: </label>
+        <input type="text" id="name" name="username">
+      </p>
+
+      <p>
+        <label for="email">E-mail: </label>
+        <input type="email" id="email" name="useremail">
+      </p>
+
+      <p>
+        <label for="pw">PASSWORD: </label>
+        <input type="password" id="pw" name="userpw">
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>optional</legend>
+      <p>
+        <label for="bd">Date of Birth: </label>
+        <input type="date" id="bd" name="userbd">
+        <!-- jqueryui.com -->
+        <div>Home Address:
+          <select class="" name="useraddress">
+            <option value="" disabled></option>
+            <option value="USA">USA</option>
+            <option value="KOREA">KOREA</option>
+            <option value="JAPAN">JAPAN</option>
+          </select>
+        </div>
+
+        <div>HOBBY:
+          <label for="reading">Reading</label>
+          <input type="checkbox" id="reading" value="reading" name="userhobby"
+          <label for="sport">Sport</label>
+          <input type="checkbox" id="sport" value="sport" name="userhobby"
+          <label for="eating">Reading</label>
+          <input type="checkbox" id="eating" value="eating" name="userhobby"
+        </div>
+
+        <div>SEX:
+          <label for="male">Male</label>
+          <input type="radio" id="male" value="male" name="usersex" checked>
+          <label for="female">Female</label>
+          <input type="radio" id="female" value="female" name="usersex">
+        </div>
+
+        <p>
+          <div>PHOTO</div>
+          <input type="file" name="userphoto" value="">
+        </p>
+
+        <p>
+          <div>textarea</div>
+          <textarea name="usermsg" rows="8" cols="80"></textarea>
+        </p>
+
+        <p>
+          <div>policy</div>
+          <textarea name="policy" rows="8" cols="80" readonly>policycycycycy</textarea>
+        </p>
+
+      </p>
+    </fieldset>
+      <p>
+        <input type="submit" value="Join">
+        <input type="reset" value="Reset">
+        <button type="submit" name="button">submit button</button>
+      </p>
+  </form>
+
+  </body>
+</html>
