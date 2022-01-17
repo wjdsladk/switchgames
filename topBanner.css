@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+* {margin: 10px; padding:0; box-sizing: border-box;}
+
+body {
+    background-color: wheat;
+}
+
+.topBanner {
+    background-color: rgb(160, 127, 67);
+    border-radius: 11px;
+}
+
+.center {
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid rgb(190, 184, 126);
+}
